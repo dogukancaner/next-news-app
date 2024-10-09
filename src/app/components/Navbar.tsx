@@ -12,6 +12,7 @@ import {
 import { Switch } from "@/components/ui/switch";
 import { Button } from "@/components/ui/button";
 import { TbMoonStars, TbSunHigh } from "react-icons/tb";
+import MobileMenu from "./MobileMenu";
 
 const Navbar = () => {
   return (
@@ -23,90 +24,107 @@ const Navbar = () => {
             <Image src={logo} alt="Logo" width={180} height={60} />
           </Link>
         </div>
-        {/* Menu */}
 
+        {/* Desktop Menu */}
         <NavigationMenu className="hidden md:flex">
           <NavigationMenuList className="flex space-x-8">
             <NavigationMenuItem>
               <NavigationMenuLink
-                href="/news"
-                className="hover: text-gray-600 font-bold"
+                href="/haber"
+                className="text-gray-500 transition-all duration-300 ease-in hover:text-blue-500 font-bold text-lg hover:underline underline-offset-8"
               >
-                News
+                Haber
               </NavigationMenuLink>
             </NavigationMenuItem>
 
-            <NavigationMenuItem>
+            {/* <NavigationMenuItem>
               <NavigationMenuTrigger className="dark:bg-gray-900 dark:text-white font-bold">
                 Services
               </NavigationMenuTrigger>
               <NavigationMenuContent>
-                <NavigationMenuLink>
-                  <ul className="text-gray-600 shadow-md rounded-md py-4 px-5 space-y-2">
-                    <li>
-                      <NavigationMenuLink
-                        href="/services/web-developent"
-                        className="hover: text-gray-600 font-bold"
-                      >
-                        Web Development
-                      </NavigationMenuLink>
-                    </li>
-                    <li>
-                      <NavigationMenuLink
-                        href="/services/app"
-                        className="hover: text-gray-600 font-bold"
-                      >
-                        Mobile Apps
-                      </NavigationMenuLink>
-                    </li>
-                    <li>
-                      <NavigationMenuLink
-                        href="/services/seo"
-                        className="hover: text-gray-600 font-bold"
-                      >
-                        SEO
-                      </NavigationMenuLink>
-                    </li>
-                  </ul>
-                </NavigationMenuLink>
+                <ul className="text-gray-600 shadow-md rounded-md py-4 px-5 space-y-2">
+                  <li>
+                    <NavigationMenuLink
+                      href="/services/web-development"
+                      className="hover:text-gray-600 font-bold"
+                    >
+                      Web Development
+                    </NavigationMenuLink>
+                  </li>
+                  <li>
+                    <NavigationMenuLink
+                      href="/services/app"
+                      className="hover:text-gray-600 font-bold"
+                    >
+                      Mobile Apps
+                    </NavigationMenuLink>
+                  </li>
+                  <li>
+                    <NavigationMenuLink
+                      href="/services/seo"
+                      className="hover:text-gray-600 font-bold"
+                    >
+                      SEO
+                    </NavigationMenuLink>
+                  </li>
+                </ul>
               </NavigationMenuContent>
-            </NavigationMenuItem>
+            </NavigationMenuItem> */}
 
             <NavigationMenuItem>
               <NavigationMenuLink
-                href="/about"
-                className="hover: text-gray-600 font-bold "
+                href="/spor"
+                className="text-gray-500 transition-all duration-300 ease-in hover:text-blue-500 font-bold text-lg hover:underline underline-offset-8"
               >
-                About
+                Spor
               </NavigationMenuLink>
             </NavigationMenuItem>
 
             <NavigationMenuItem>
               <NavigationMenuLink
-                href="/contact"
-                className="hover: text-gray-600 font-bold "
+                href="/finans"
+                className="text-gray-500 transition-all duration-300 ease-in hover:text-blue-500 font-bold text-lg hover:underline underline-offset-8"
               >
-                Contact
+                Finans
+              </NavigationMenuLink>
+            </NavigationMenuItem>
+
+            <NavigationMenuItem>
+              <NavigationMenuLink
+                href="/magazin"
+                className="text-gray-500 transition-all duration-300 ease-in hover:text-blue-500 font-bold text-lg  hover:underline underline-offset-8"
+              >
+                Magazin
+              </NavigationMenuLink>
+            </NavigationMenuItem>
+
+            <NavigationMenuItem>
+              <NavigationMenuLink
+                href="/sağlık"
+                className="text-gray-500 transition-all duration-300 ease-in hover:text-blue-500 font-bold text-lg  hover:underline underline-offset-8"
+              >
+                Sağlık
               </NavigationMenuLink>
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
 
-        {/* Color switcher and login button */}
-
-        <div className="hidden lg:flex items-center space-x-4">
-          <div className="flex items-center gap-2">
+        {/* Color switcher, login button, and hamburger menu */}
+        <div className="flex items-center space-x-4">
+          <div className="hidden lg:flex items-center gap-2">
             <span>
-              <TbSunHigh size={24} />
+              <TbSunHigh size={24} className="text-gray-500" />
             </span>
             <Switch />
             <span>
-              <TbMoonStars size={24} />
+              <TbMoonStars size={24} className="text-gray-500" />
             </span>
           </div>
           <Button variant="default" className="bg-blue-500 font-bold">
             Login
           </Button>
+          {/* Hamburger Menu for Mobile */}
+          <MobileMenu />
         </div>
       </nav>
     </header>
