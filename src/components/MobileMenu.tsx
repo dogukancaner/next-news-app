@@ -11,14 +11,13 @@ import {
   TbMoonStars,
   TbSunHigh,
   TbMenu2,
-  TbMail,
   TbNews,
-  TbInfoCircle,
   TbBallBasketball,
   TbChartHistogram,
   TbShoppingBag,
-  TbHeartSearch,
 } from "react-icons/tb";
+import { GiKnifeFork } from "react-icons/gi";
+
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 const MobileMenu = () => {
@@ -69,11 +68,11 @@ const MobileMenu = () => {
               <TbShoppingBag className="mr-2 text-blue-500" size={20} /> Magazin
             </Link>
             <Link
-              href="/sağlık"
+              href="/yemek"
               className="text-lg font-bold text-gray-500 flex items-center justify-center bg-slate-100 rounded-md w-full h-12"
             >
-              <TbHeartSearch className="mr-2 text-blue-500" size={20} />
-              Sağlık
+              <GiKnifeFork className="mr-2 text-blue-500" size={20} />
+              Yemek
             </Link>
             <div className="flex flex-col items-center mt-2 gap-2">
               <div className="flex items-center gap-2">

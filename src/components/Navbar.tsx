@@ -3,11 +3,9 @@ import Link from "next/link";
 import logo from "@/assets/logo.png";
 import {
   NavigationMenu,
-  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import { Switch } from "@/components/ui/switch";
 import { Button } from "@/components/ui/button";
@@ -36,40 +34,6 @@ const Navbar = () => {
                 Haber
               </NavigationMenuLink>
             </NavigationMenuItem>
-
-            {/* <NavigationMenuItem>
-              <NavigationMenuTrigger className="dark:bg-gray-900 dark:text-white font-bold">
-                Services
-              </NavigationMenuTrigger>
-              <NavigationMenuContent>
-                <ul className="text-gray-600 shadow-md rounded-md py-4 px-5 space-y-2">
-                  <li>
-                    <NavigationMenuLink
-                      href="/services/web-development"
-                      className="hover:text-gray-600 font-bold"
-                    >
-                      Web Development
-                    </NavigationMenuLink>
-                  </li>
-                  <li>
-                    <NavigationMenuLink
-                      href="/services/app"
-                      className="hover:text-gray-600 font-bold"
-                    >
-                      Mobile Apps
-                    </NavigationMenuLink>
-                  </li>
-                  <li>
-                    <NavigationMenuLink
-                      href="/services/seo"
-                      className="hover:text-gray-600 font-bold"
-                    >
-                      SEO
-                    </NavigationMenuLink>
-                  </li>
-                </ul>
-              </NavigationMenuContent>
-            </NavigationMenuItem> */}
 
             <NavigationMenuItem>
               <NavigationMenuLink
@@ -100,10 +64,10 @@ const Navbar = () => {
 
             <NavigationMenuItem>
               <NavigationMenuLink
-                href="/sağlık"
+                href="/yemek"
                 className="text-gray-500 transition-all duration-300 ease-in hover:text-blue-500 font-bold text-lg  hover:underline underline-offset-8"
               >
-                Sağlık
+                Yemek
               </NavigationMenuLink>
             </NavigationMenuItem>
           </NavigationMenuList>
