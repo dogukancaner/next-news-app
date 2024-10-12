@@ -1,7 +1,15 @@
-export default function Home() {
+import HomepageContainer from "@/components/HomepageContainer";
+
+import { getNewsData } from "@/lib/getNewsData";
+
+const Homepage = async () => {
+  const data = await getNewsData();
+
   return (
     <div>
-      <h1>Hello Developer</h1>
+      <HomepageContainer data={data} />
     </div>
   );
-}
+};
+
+export default Homepage;

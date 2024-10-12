@@ -14,8 +14,8 @@ import MobileMenu from "./MobileMenu";
 
 const Navbar = () => {
   return (
-    <header className="py-4 bg-white text-gray-900 border shadow-md transition-colors duration-300">
-      <nav className="max-w-7xl mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8">
+    <header className="py-4 bg-white text-slate-900 border shadow-md transition-colors duration-300">
+      <nav className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="cursor-pointer w-40 h-12 md:w-56 md:h-16">
           <Link href="/">
@@ -29,7 +29,7 @@ const Navbar = () => {
             <NavigationMenuItem>
               <NavigationMenuLink
                 href="/haber"
-                className="text-gray-500 transition-all duration-300 ease-in hover:text-blue-500 font-bold text-lg hover:underline underline-offset-8"
+                className="text-slate-900 transition-all duration-300 ease-in hover:text-blue-500 font-bold text-lg hover:underline underline-offset-8"
               >
                 Haber
               </NavigationMenuLink>
@@ -38,7 +38,7 @@ const Navbar = () => {
             <NavigationMenuItem>
               <NavigationMenuLink
                 href="/spor"
-                className="text-gray-500 transition-all duration-300 ease-in hover:text-blue-500 font-bold text-lg hover:underline underline-offset-8"
+                className="text-slate-900 transition-all duration-300 ease-in hover:text-blue-500 font-bold text-lg hover:underline underline-offset-8"
               >
                 Spor
               </NavigationMenuLink>
@@ -47,7 +47,7 @@ const Navbar = () => {
             <NavigationMenuItem>
               <NavigationMenuLink
                 href="/finans"
-                className="text-gray-500 transition-all duration-300 ease-in hover:text-blue-500 font-bold text-lg hover:underline underline-offset-8"
+                className="text-slate-900 transition-all duration-300 ease-in hover:text-blue-500 font-bold text-lg hover:underline underline-offset-8"
               >
                 Finans
               </NavigationMenuLink>
@@ -56,7 +56,7 @@ const Navbar = () => {
             <NavigationMenuItem>
               <NavigationMenuLink
                 href="/magazin"
-                className="text-gray-500 transition-all duration-300 ease-in hover:text-blue-500 font-bold text-lg  hover:underline underline-offset-8"
+                className="text-slate-900 transition-all duration-300 ease-in hover:text-blue-500 font-bold text-lg  hover:underline underline-offset-8"
               >
                 Magazin
               </NavigationMenuLink>
@@ -65,7 +65,7 @@ const Navbar = () => {
             <NavigationMenuItem>
               <NavigationMenuLink
                 href="/yemek"
-                className="text-gray-500 transition-all duration-300 ease-in hover:text-blue-500 font-bold text-lg  hover:underline underline-offset-8"
+                className="text-slate-900 transition-all duration-300 ease-in hover:text-blue-500 font-bold text-lg  hover:underline underline-offset-8"
               >
                 Yemek
               </NavigationMenuLink>
@@ -77,15 +77,18 @@ const Navbar = () => {
         <div className="flex items-center space-x-4">
           <div className="hidden lg:flex items-center gap-2">
             <span>
-              <TbSunHigh size={24} className="text-gray-500" />
+              <TbSunHigh size={24} className="text-slate-900" />
             </span>
             <Switch />
             <span>
-              <TbMoonStars size={24} className="text-gray-500" />
+              <TbMoonStars size={24} className="text-slate-900" />
             </span>
           </div>
-          <Button variant="default" className="bg-blue-500 font-bold">
-            Login
+          <Button
+            variant="default"
+            className="bg-blue-500 hover:bg-blue-600 font-bold"
+          >
+            Giriş Yap
           </Button>
           {/* Hamburger Menu for Mobile */}
           <MobileMenu />

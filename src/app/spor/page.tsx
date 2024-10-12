@@ -1,5 +1,7 @@
-const SportPage = () => {
-  return <div>SportPage</div>;
+import SportNews from "@/components/SportNews";
+
+const SportsNews = () => {
+  return <SportNews />;
 };
 
-export default SportPage;
+export default SportsNews;
