@@ -6,7 +6,7 @@ const NewsPage = async () => {
   const data = await getNewsData();
 
   return (
-    <div>
+    <div className="max-w-7xl mx-auto">
       <NewsList newsData={data} />
     </div>
   );

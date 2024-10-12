@@ -7,9 +7,7 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
-import { Switch } from "@/components/ui/switch";
-import { Button } from "@/components/ui/button";
-import { TbMoonStars, TbSunHigh } from "react-icons/tb";
+
 import MobileMenu from "./MobileMenu";
 
 const Navbar = () => {
@@ -73,26 +71,8 @@ const Navbar = () => {
           </NavigationMenuList>
         </NavigationMenu>
 
-        {/* Color switcher, login button, and hamburger menu */}
-        <div className="flex items-center space-x-4">
-          <div className="hidden lg:flex items-center gap-2">
-            <span>
-              <TbSunHigh size={24} className="text-slate-900" />
-            </span>
-            <Switch />
-            <span>
-              <TbMoonStars size={24} className="text-slate-900" />
-            </span>
-          </div>
-          <Button
-            variant="default"
-            className="bg-blue-500 hover:bg-blue-600 font-bold"
-          >
-            Giriş Yap
-          </Button>
-          {/* Hamburger Menu for Mobile */}
-          <MobileMenu />
-        </div>
+        {/* Hamburger Menu for Mobile */}
+        <MobileMenu />
       </nav>
     </header>
   );
